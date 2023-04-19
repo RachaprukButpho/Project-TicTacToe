@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TIC TAC TOE</title>
+    <link rel="icon" href="pic/icon.png">
+
+</head>
+
+<body>
+    <audio src="bgm,sound/draw.mp3" id="draw"></audio>
+    <audio src="bgm,sound/WetHand.mp3" id="bgm"></audio>
+    <audio src="bgm,sound/select.mp3" id="select"></audio>
+    <audio src="bgm,sound/marioWin.mp3" id="win"></audio>
+    <button onclick="autoBgm()">Play BGM</button>
+    <button onclick="muteBgm()">Pause BGM</button>
+    <div id="center">
+        <h1>TIC TAC TOE</h1>
+        <div id="row1">
+            <div id="block11">
+                <p id="count11"></p>
+            </div>
+            <div id="block21">
+                <p id="count21"></p>
+            </div>
+            <div id="block31">
+                <p id="count31"></p>
+            </div>
+        </div>
+        <div id="row2">
+            <div id="block12">
+                <p id="count12"></p>
+            </div>
+            <div id="block22">
+                <p id="count22"></p>
+            </div>
+            <div id="block32">
+                <p id="count32"></p>
+            </div>
+        </div>
+        <div id="row3">
+            <div id="block13">
+                <p id="count13"></p>
+            </div>
+            <div id="block23">
+                <p id="count23"></p>
+            </div>
+            <div id="block33">
+                <p id="count33"></p>
+            </div>
+        </div>
+        <p id="turn">Player 'O' turn</p>
+        <button id="restart" onclick="location.reload()">New game</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
