@@ -1,3 +1,4 @@
+//test git pull
 //select id from all the blocks
 const block11 = document.getElementById("block11");
 const block12 = document.getElementById("block12");
